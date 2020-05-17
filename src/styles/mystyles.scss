@@ -1,0 +1,90 @@
+//initial import
+@import 'bulma/sass/utilities/initial-variables.sass';
+@import 'bulma/sass/utilities/functions.sass';
+@import 'common/variables';
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+
+//card & box
+$card-shadow: 0 0.5em 1em -0.125em rgba($icon, 0.1),
+  0 0px 0 1px rgba($icon, 0.1);
+$box-shadow: 0 0.5em 1em -0.125em rgba($icon, 0.1), 0 0px 0 1px rgba($icon, 0.1);
+
+//navbar
+$navbar-item-hover-background-color: $primary_navbar;
+$navbar-item-active-background-color: $primary_navbar;
+
+//menu
+$menu-item-active-color: $bb;
+$menu-item-active-background-color: $white;
+$menu-item-hover-background-color: $white;
+$primary: $bb;
+$dark: $bb;
+
+//pagination
+$pagination-current-background-color: $bb;
+$pagination-current-border-color: $bb;
+
+//tabs
+$tabs-toggle-link-active-border-color: $bb;
+$tabs-toggle-link-active-background-color: $bb;
+
+//.fas .far {
+//  color: $grey;
+//}
+
+.demo-app {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.demo-app-top {
+  margin: 0 0 3em;
+}
+
+.demo-app-calendar {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+
+.menu {
+  margin-bottom: 100%;
+}
+
+.menu-list .is-active {
+  border-left: 3px solid $bb;
+  margin-left: -3px;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.panel-block.is-active .svg-inline--fa.fa-briefcase.fa-w-16 {
+  color: $bb;
+}
+
+//footer
+$footer-background-color: $lgrey;
+
+//rest of bulma
+@import 'bulma';
+
+//Dropdow nmenu would stay open without this code it should be behind @import "bulma" to overeid it (bug)
+.navbar-item.is-hoverable:hover .navbar-dropdown {
+  display: block !important;
+}
+.navbar-item.is-hoverable:focus-within .navbar-dropdown {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import './common/basic';
+@import './components/footer';
+@import './components/table';
+@import './components/table';

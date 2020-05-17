@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  height: 25px;
+  clear: both;
+  margin: auto;
+  z-index: 10000;
+  position: fixed;
+  padding: 0.2rem 1.5rem 2rem;
+  color: $text-color;
+  background-color: $footer-bg-color;
+  bottom: 0;
+}

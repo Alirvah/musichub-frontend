@@ -1,0 +1,37 @@
+//colors
+$white: #ffffff;
+$lgrey: #f7f7f7;
+$bb: #3e62ff;
+$primary_navbar: #be0062;
+$secondary_navbar: #ffe5ff;
+$table_1: #e5e5e5;
+$table_2: #afaeae;
+$point: #02bcff;
+$green: #49e032;
+$icon: #000000ab;
+$text-color: #666666;
+$footer-bg-color: #e5e5e5;
+$grey: #4a4a4a;
+
+$turtoise-base: #00e26d;
+$turtoise-50: #e5fbeb;
+$turtoise-100: #c2f5ce;
+$turtoise-200: #96efae;
+$turtoise-300: #5ee98b;
+$turtoise-500: #00db4f;
+$turtoise-600: #00ca44;
+
+//color export
+:export {
+  white: $white;
+  lgrey: $lgrey;
+  grey: $grey;
+  bb: $bb;
+  primary_navbar: $primary_navbar;
+  secondary_navbar: $secondary_navbar;
+  table_1: $table_1;
+  table_2: $table_2;
+  point: $point;
+  green: $green;
+  icon: $icon;
+}
