@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="navbar-brand">
         <NavLink className="navbar-item" to={"/"}>
           <p className="navbar-item title is-4" style={{ color: "white" }}>
-            Havrila.net
+            Musichub
           </p>
         </NavLink>
       </div>
