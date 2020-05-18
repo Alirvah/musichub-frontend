@@ -1,13 +1,16 @@
 {
-  "name": "musichub",
+  "name": "havrila.net",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/cli": "^4.20.0",
     "@fullcalendar/core": "^4.4.0",
     "@fullcalendar/daygrid": "^4.4.0",
     "@fullcalendar/interaction": "^4.4.0",
     "@fullcalendar/react": "^4.4.0",
     "@fullcalendar/timegrid": "^4.4.0",
+    "aws-amplify": "^3.0.11",
+    "aws-amplify-react": "^4.1.10",
     "axios": "0.19.2",
     "bulma": "0.8.1",
     "bulma-toast": "1.5.4",

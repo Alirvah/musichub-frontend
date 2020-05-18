@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import { GlobalContext } from '../../config/GlobalContext';
-import NavbarItems from '../navbar/NavbarItems';
-import { NavLink, Redirect } from 'react-router-dom'
-import mystyles from '../../styles/mystyles.scss';
+import React, { useContext } from "react";
+import { GlobalContext } from "../../config/GlobalContext";
+import NavbarItems from "../navbar/NavbarItems";
+import { NavLink, Redirect } from "react-router-dom";
+import mystyles from "../../styles/mystyles.scss";
 
 const Navbar = () => {
   const [global] = useContext(GlobalContext);
@@ -14,9 +14,11 @@ const Navbar = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-            <NavLink className="navbar-item" to={'/'}>
-                <p className="navbar-item title is-4" style={{color:'white'}}>Musichub</p>
-            </NavLink>
+        <NavLink className="navbar-item" to={"/"}>
+          <p className="navbar-item title is-4" style={{ color: "white" }}>
+            Havrila.net
+          </p>
+        </NavLink>
       </div>
       {global.user ? (
         <NavbarItems />

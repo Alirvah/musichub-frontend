@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const Footer = (counter) => {
+  const theYear = new Date();
+
   return (
     <div>
       <footer className="footer">
         <div className="columns">
           <div className="column">
-            <strong>© 2020 Musichub </strong>  
-            M
+            <strong> {theYear.getFullYear()} </strong>M
           </div>
           <div className="column">
             <div className="is-pulled-right">
@@ -17,7 +18,7 @@ const Footer = (counter) => {
                   href="https://google.com"
                   rel="noopener noreferrer"
                 >
-                O nas 
+                  O nas
                 </a>
               </span>
               <span>&nbsp;|&nbsp;</span>

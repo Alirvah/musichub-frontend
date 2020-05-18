@@ -1,13 +1,15 @@
-import './styles/mystyles.scss';
+import React from "react";
+import { hydrate, render } from "react-dom";
+import App from "./App";
+import "./styles/mystyles.scss";
 
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from "./serviceWorker";
 
-import { hydrate, render } from 'react-dom';
+import Amplify from "aws-amplify";
+import awsconfig from "./aws-exports";
+Amplify.configure(awsconfig);
 
-import App from './App';
-import React from 'react';
-
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 
 if (rootElement.hasChildNodes()) {
   hydrate(<App />, rootElement);
